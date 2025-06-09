@@ -25,3 +25,27 @@ Cadastrar fornecedores com nome, tipo de flor, preço unitário, quantidade em e
 Busca automática de endereço usando o CEP via API ViaCEP;
 Visualização de todos os fornecedores cadastrados;
 Funções de edição e exclusão de registros.
+
+O QUE APRENDI COM O SISTEMA
+Aprendi a construir um sistema completo, com foco em cadastro, organização de dados e integração com API externa. Além disso, aprendi a versionar um projeto com Git e GitHub.
+
+DIFICULDADES ENCONTRADAS
+A maior dificuldade foi relacionada ao uso do Git e GitHub. Mesmo tendo estudado o básico, enfrentei erros como:
+Quando tentei adicionar um repositório remoto que já estava vinculado;
+Erro (refspec) ao tentar dar push sem ter criado de fato um commit ou mesmo o branch main.
+Também encontrei um problema menor no formulário HTML, onde, ao pressionar Enter no campo de CEP, o formulário era enviado automaticamente sem que a API ViaCEP terminasse de rodar os dados.
+
+COMO REOLVI AS DIFICULDADES
+No Git:
+Usei o comando git remote set-url origin para corrigir a URL do repositório remoto;
+Descobri que o erro do refspec acontecia porque ainda não tinha feito nenhum commit, então executei o git add . e git commit -m "Primeiro commit" antes de fazer o push;
+Também entendi que o branch main precisa existir localmente antes de ser enviado.
+No formulário:
+Editei o JavaScript do viaCEP.js para impedir que o Enter enviasse o formulário no campo de CEP, permitindo que o usuário pressione Enter sem quebrar o fluxo da API.
+
+MELHORIAS FUTURAS PARA TORNAR O SISTEMA COMERCIAL, RENTÁVEL E ESCALÁVEL
+Caso o sistema Pétala Gestão fosse transformado em um produto real, estas são algumas ideias que poderiam torná-lo mais profissional:
+Login com autenticação de usuários (admin e funcionários);
+Painel de relatórios e gráficos com dados de estoque, vendas e fornecedores mais ativos;
+Cadastro de clientes e pedidos, expandindo além do controle de fornecedores;
+Integração com WhatsApp Business para facilitar contato com fornecedores;
