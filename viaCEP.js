@@ -40,4 +40,16 @@ window.onload = function () {
                 });
         });
     }
+
+    // Evita que pressionar Enter em qualquer campo de input envie o formulário automaticamente
+    document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+
+        form.addEventListener("keydown", function (event) {
+            // Se a tecla pressionada for Enter e o alvo for um input (menos do tipo submit), bloqueia
+            if (event.key === "Enter" && event.target.tagName === "INPUT") {
+                event.preventDefault();
+            }
+        });
+    });
 };
