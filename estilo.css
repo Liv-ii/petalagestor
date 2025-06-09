@@ -1,0 +1,122 @@
+/* CONFIGURAÇÃO GERAL DO BODY */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif; /* Fonte leve e moderna */
+    background: linear-gradient(to right, #fff5f7, #ffeef2); /* Fundo em degrade rosado */
+    color: #5a3d3d; /* Cor de texto suave, puxada para o marrom rosado */
+}
+
+/* ESTILO DOS TÍTULOS */
+h1, h2 {
+    font-family: 'Playfair Display', serif; /* Fonte com serifas para toque mais elegante */
+    color: #a64d79; /* Tom rosa antigo */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em; /* Título principal grande */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em; /* Subtítulos menores */
+    margin-top: 30px;
+}
+
+/* FORMULÁRIO DE CADASTRO */
+form {
+    background-color: #fff0f5; /* Fundo delicado rosado */
+    border: 2px solid #ffcce0; /* Borda rosa clara */
+    border-radius: 15px; /* Bordas arredondadas para suavidade */
+    max-width: 500px;
+    margin: 0 auto 30px auto; /* Centralizado na página com margem inferior */
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(255, 192, 203, 0.3); /* Sombra leve */
+}
+
+/* CAMPOS DE ENTRADA E BOTÃO */
+input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 8px; /* Cantos arredondados */
+    border: 1px solid #ffcce0;
+    font-size: 1em;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Efeito quando o usuário clica no campo */
+input:focus {
+    border-color: #f88cab;
+    outline: none;
+    background-color: #fffafc;
+}
+
+/* Botão de envio estilizado */
+button {
+    background-color: #f88cab;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Animação suave ao passar o mouse */
+}
+
+/* Cor mais escura ao passar o mouse no botão */
+button:hover {
+    background-color: #e67198;
+}
+
+/* TABELA DE FORNECEDORES */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fffafc;
+    box-shadow: 0 0 12px rgba(255, 192, 203, 0.3); /* Sombra leve em rosa */
+    border-radius: 12px;
+    overflow: hidden; /* Arredondamento nas bordas da tabela */
+}
+
+/* Células da tabela */
+th, td {
+    border: 1px solid #ffe0eb;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+/* Cabeçalho da tabela */
+th {
+    background-color: #fdd6e1;
+    color: #7a3653;
+    font-weight: bold;
+}
+
+/* Linhas de conteúdo da tabela */
+td {
+    background-color: #fff;
+    color: #4d3c3c;
+}
+
+/* LINKS DE AÇÕES (Editar / Excluir) */
+a {
+    color: #cc4c78; /* Rosa escuro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e63768;
+    text-decoration: underline;
+}
+
+/* MENSAGEM DE NÃO HÁ FORNECEDORES */
+p {
+    text-align: center;
+    color: #8b5a65;
+    font-style: italic;
+    margin-top: 20px;
+}
